@@ -27,11 +27,10 @@ console.log(bubbleSortMerge(arr1, arr2));
 
 // 3
 const bubbleSortObject = (arr) => {
-    const key = arr.map((key) => key);
-    const n = key.length;
+    const n = arr.length;
   for (let i = n - 1; i > 0; i--) {
     for (let j = 0; j < i; j++) {
-      if (arr[j] > arr[j + 1]) {
+      if (arr[j].key > arr[j + 1].key) {
         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
       }
     }

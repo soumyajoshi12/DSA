@@ -59,3 +59,5 @@ const arr = [
 ];
 
 console.log(bubbleSortObject(arr));
+
+// 4
